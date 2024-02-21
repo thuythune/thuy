@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#header {
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(image/image/nên.jpg);
+}
+
+
+#menu {
+    list-style: none;
+    display: flex;
+}
+#menu button {
+    background: linear-gradient(90deg, rgb(138, 79, 197) 0%, rgb(92, 149, 229) 100%);
+    margin: 0 30px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    transition: 0.4s;
+    width: 240px;
+}
+
+#menu .item {
+    margin: 0px 25px;
+    font-size: 30px;
+}
+
+#menu .item a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu .item > li {
+    position: relative;
+}
+
+
+
+#menu .item > li:hover .sub-item {
+    display: block;
+}
+
+
+#menu .item .sub-item {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 0px 10px 20px;
+    display: none;
+}
+
+
+#menu .item ul a {
+    font-size: 25px;
+    display: block;
+    line-height: 30px;
+}
+
+
+#account {
+    display: flex;
+    font-size: 30px;
+}
+
+#account .item {
+    margin-left: 22px;
+}
+
+#account .item:first-child input {
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+
+/* -----------------------------lien he---------------------------------- */
+
+
+  
+.trai{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+  }
+  
+.traitrong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.phai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  #content {
+    margin: 20px;
+    padding: 30px;
+    background: rgba(5, 5, 5, 0.574);
+    height: 70%;
+    width: 50%;
+    border: 1px solid #6e6969;
+    /* Khung màu xám nhạt */
+    border-radius: 15px;
+    /* Tạo khung bo tròn 10px */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Thêm hiệu ứng đổ bóng */
+  
+  }
+  
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 20px 20px 20px;
+    padding: 20px;
+    background: rgba(5, 5, 5, 0.574);
+    width: 60%;
+    height: 60%;
+    border: 1px solid #6e6969;
+    /* Khung màu xám nhạt */
+    border-radius: 15px;
+    /* Tạo khung bo tròn 10px */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Thêm hiệu ứng đổ bóng */
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    /* Kích thước chữ 24px */
+    font-weight: bold;
+    /* Font chữ đậm */
+    color: white;
+  }
+  
+  /* Các trường nhập liệu */
+  label {
+    display: block;
+    /* Hiển thị mỗi label trên một dòng riêng */
+    margin-bottom: 8px;
+    /* Tạo khoảng cách với input bên dưới */
+    font-size: 18px;
+    /* Kích thước chữ 18px */
+    color: #f5f5f5;
+  }
+  button[type="submit"] {
+    background-color: #d26754e5;
+    color: #fff;
+    /* Màu chữ trắng */
+    border: none;
+    /* Xóa đường viền */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Hình dạng con trỏ chuột khi di chuyển lên nút */
+    font-size: 17px;
+    /* Kích thước chữ 18px */
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    /* Chiều rộng bằng toàn bộ khung */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Bao gồm padding và border trong chiều rộng */
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  /* Thêm hiệu ứng cho các trường nhập liệu */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #007bff;
+    /* Thay đổi màu đường viền khi nhập liệu */
+  }
+  
+  /* Thêm hiệu ứng cho nút gửi */
+  button[type="submit"]:hover {
+    background-color: #7da6d2;
+    /* Thay đổi màu nền khi di chuột lên nút */
+  }
+  
+  /* Thay đổi màu chữ khi nhấn chuột */
+  a {
+    color: rgb(250, 252, 253);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(194, 116, 239);
+  }
+  
+  
+  p {
+    color: #f5f5f5;
+    display: block;
+    margin-bottom: 10px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
+    /* Làm cho chữ nghiêng */
+    font-style: italic;
+    font-size: 13.5px;
+  }
+  
+  h3 {
+    text-align: center;
+    /* Căn giữa tiêu đề */
+    margin-bottom: 15px;
+    /* Tạo khoảng cách với các phần tử bên dưới */
+    color: #f5f5f7;
+  
+  }
+  
+  li {
+    margin-bottom: 15px;
+    /* Tạo khoảng cách giữa các dòng */
+    color: rgb(246, 249, 250);
+    font-style: italic;
+  
+  }
+  .gui{
+    display:flex;
+    margin-top: 25px;
+  }
+  .bam{
+    margin-right: 80px;
+  }
+  .nut{
+    margin-left: 40px;
+  }
+  
+  
+    
+  
+/* ----------footer---------- */
+
+
+#footer {
+    width: 100%;
+    background: rgb(0, 0, 0,0.79);
+    height: 400px;
+    margin-top: 30px;
+    padding: 0px 63px;
+    padding-top: 57px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .box {
+    width: 250px;
+    color: #fff;
+}
+
+#footer .box .quick-menu {
+    margin-top: 40px;
+}
+
+#footer .box .quick-menu .item {
+    margin-bottom: 12px;
+}
+
+#footer .box .quick-menu .item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .box form input {
+    width: 294px;
+    height: 42px;
+    background: transparent;
+    padding-left: 20px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+#footer .box form button {
+    background: #362f2f;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0,25);
+    width: 163px;
+    height: 38px;
+    margin-top: 29px;
+    color: #fff;
+}
+

@@ -1,0 +1,23 @@
+*{
+    margin: 20px;
+    padding: 10px;
+}
+
+
+
+/* -----------------form đăng ký--------------- */
+
+.auth-form-contaiber {
+    padding: 0 32px 32px 0px;
+}
+
+.auth-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-heading {
+    font-size: 30px;
+    font-weight: 400px;
+}
